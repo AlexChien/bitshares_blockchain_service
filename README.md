@@ -16,3 +16,9 @@ Test
 -----
 
     rspec
+    
+Branch
+-------
+
+`master` branch contains productional stable code, will be deployed to production server  
+`develop` branch contains latest development code, will be deployed to staging server
