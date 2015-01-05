@@ -1,0 +1,21 @@
+setting: &setting
+  adapter: mysql2
+  encoding: utf8
+  user: root
+  host: localhost
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *setting
+  database: bitshares_blockchain_development
+  rpc_port: 5000
+  rpc_username: test
+  rpc_password: test
+
+test:
+  <<: *setting
+  database: bitshares_blockchain_test
+
+production:
+  <<: *setting
+  database: bitshares_blockchain_production
