@@ -10,7 +10,7 @@ class CreateBlockchainBlocks < ActiveRecord::Migration
       t.string :next_secret_hash
       t.string :previous_secret
       t.string :delegate_signature
-      t.string :user_transaction_ids
+      t.text :user_transaction_ids
       t.integer :signee_shares_issued
       t.integer :signee_fees_collected
       t.integer :signee_fees_destroyed

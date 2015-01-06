@@ -29,7 +29,7 @@ class BlockchainBlock < ActiveRecord::Base
                                  :next_secret_hash=>block["next_secret_hash"],
                                  :previous_secret=>block["previous_secret"],
                                  :delegate_signature=>block["delegate_signature"],
-                                 :user_transaction_ids=>block["user_transaction_ids"],
+                                 :user_transaction_ids=>block["user_transaction_ids"].join(","),
                                  :signee_shares_issued=>block["signee_shares_issued"],
                                  :signee_fees_collected=>block["signee_fees_collected"],
                                  :signee_fees_destroyed=>block["signee_fees_destroyed"],
